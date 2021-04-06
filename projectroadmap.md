@@ -40,9 +40,11 @@ Week of March 29th;
 - Started creating the game 
 - Trouble-shot problems with implementation of the difficulty .py files I made. all boiled down to a simple error in the
 import line. since I have never used that before i didn't know what I was doing
-- Difficulty selection is working!  
+- Difficulty selection is working!
 
 
 Week of April 5th
 
 - Made Project Road Map .md file
+- Improved readme.md file 
+- 
