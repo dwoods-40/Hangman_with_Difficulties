@@ -1,5 +1,6 @@
 normal_list = [
-    'wares',
+    'wares'
+    'school',
     'soup',
     'mount',
     'extend',
