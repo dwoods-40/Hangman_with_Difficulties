@@ -1,4 +1,5 @@
 easy_list = ['cat',
+             'two',
              'bat',
              'mix',
              'all',
