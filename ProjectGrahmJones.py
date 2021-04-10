@@ -2,8 +2,8 @@
 import random
 import tkinter
 
-from ISProject.Hangman_with_GUI_and_Difficulties.EasWords import easy_list
-from ISProject.Hangman_with_GUI_and_Difficulties.NormWords import normal_list
+from ISProject.Hangman_with_GUI_and_Difficulties.EasyWords import easy_list
+from ISProject.Hangman_with_GUI_and_Difficulties.NormalWords import normal_list
 from ISProject.Hangman_with_GUI_and_Difficulties.HardWords import hard_list
 
 
