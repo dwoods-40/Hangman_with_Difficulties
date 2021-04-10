@@ -17,4 +17,5 @@ hard_list = ['valetudinarian',
              'commensurateness',
              'xanthoma',
              'xanthophyll',
-             'Zamiaceae', ]
+             'Zamiaceae',
+             'Pneumonoultramicroscopicsilicovolcanoconiosis', ]  # yes that is a read word... good luck
