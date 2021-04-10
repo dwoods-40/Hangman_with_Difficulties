@@ -26,6 +26,14 @@ and working properly.
 - ...
 
 
+# CHECK LIST
+
+- [x] Made file and list for easy difficulty
+- [x] Made file and list for hard difficulty
+- [x] made main project file
+- [x] Difficulty working in project file
+- [ ] create GUI with TKinter
+
 
 # Progress so far
 
@@ -36,6 +44,8 @@ Week of March 29th;
 - Created Github repository
 - Made the python files with the lists with the different difficulties.
 - Created main project files
+- Created Easy words python file
+- Created Hard words python file
 - Added all my files to the repository
 - Started creating the game 
 - Trouble-shot problems with implementation of the difficulty .py files I made. all boiled down to a simple error in the
@@ -47,4 +57,4 @@ Week of April 5th
 
 - Made Project Road Map .md file
 - Improved readme.md file 
-- 
+- made checklist in this file
