@@ -32,6 +32,9 @@ and working properly.
 - [x] Made file and list for hard difficulty
 - [x] made main project file
 - [x] Difficulty working in project file
+- [x] Finish the main game
+- [ ] Start building GUI
+- [ ] Implement code into the GUI
 - [ ] create GUI with TKinter
 
 
@@ -39,7 +42,7 @@ and working properly.
 
 I will be updating this daily/weekly on my progress
 
-Week of March 29th;
+Week of March 29th
 
 - Created Github repository
 - Made the python files with the lists with the different difficulties.
@@ -57,4 +60,13 @@ Week of April 5th
 
 - Made Project Road Map .md file
 - Improved readme.md file 
-- made checklist in this file
+- Made a checklist in this file
+- Completed all requirements for sprint 1
+
+Week of April 12th
+
+- Worked on the main game file 
+- Finished the main 
+- Everything is working 
+- Main game runs
+- Started testing tkinter and how to do the GUI
