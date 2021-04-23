@@ -34,7 +34,8 @@ and working properly.
 - [x] Difficulty working in project file
 - [x] Finish the main game
 - [ ] Start building GUI
-- [ ] Implement code into the GUI
+- [ ] Implement code into the GUi
+- [ ] Create an image for the hangman GUI
 - [ ] create GUI with TKinter
 
 
@@ -70,3 +71,8 @@ Week of April 12th
 - Everything is working 
 - Main game runs
 - Started testing tkinter and how to do the GUI
+
+Week of 23
+
+- Trying to figure out GUI
+- Completed Sprint 2
