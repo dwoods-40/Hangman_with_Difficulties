@@ -1,6 +1,7 @@
 # Hangman game !
+from tkinter import *
 import random
-# import tkinter
+
 
 from ISProject.Hangman_with_GUI_and_Difficulties.EasyWords import easy_list
 from ISProject.Hangman_with_GUI_and_Difficulties.NormalWords import normal_list
@@ -9,8 +10,7 @@ from ISProject.Hangman_with_GUI_and_Difficulties.HardWords import hard_list
 
 # imports all of the words fro m each list ^
 
-def get_difficulty_word():  # pick's the difficultly, then sends it to other functions(?)(or does it here) depending
-    # on the ui
+def get_difficulty_word():  # pick's the difficultly
     while True:
         mode_ui = input('What Difficulty Would You Like To Play?\n(E)asy, (N)ormal {recommended}, or (H)ard: ')
         #  put function in each statement below so the correct difficulty gets put on word variable
