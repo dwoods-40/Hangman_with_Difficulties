@@ -12,28 +12,36 @@ def get_difficulty_word():  # pick's the difficultly
         mode_ui = input('What Difficulty Would You Like To Play?\n(E)asy, (N)ormal {recommended}, or (H)ard: ')
         #  put function in each statement below so the correct difficulty gets put on word variable
         if mode_ui.lower() == 'e':  # play easy use another function if needed
-            a_word = random.choice(easy_list)
-            return a_word.upper()
+            random_word = random.choice(easy_list)
+            return random_word.upper()
 
         elif mode_ui.lower() == 'n':  # play normal
-            a_word = random.choice(normal_list)
-            return a_word.upper()
+            random_word = random.choice(normal_list)
+            return random_word.upper()
 
         elif mode_ui.lower() == 'h':  # play hard
-            a_word = random.choice(hard_list)
-            return a_word.upper()
+            random_word = random.choice(hard_list)
+            return random_word.upper()
 
         else:
             print('Invalid input, try again.')
 
 
-word = get_difficulty_word()
-random_word = list(word)
+list_word = []
+file1 = get_difficulty_word()
+
+# Appending words from file to the list
+for x in file1:
+    list_word.append(x.replace('\n', ''))
+    print(list_word)
+
+# word = random.choice(mywords)
+the_word = list(list_word)
 p = []
-s = '_ ' * len(random_word)
+s = '_ ' * len(the_word)
 p = s.split(' ')
-p.pop(len(get_difficulty_word()))
-actual = get_difficulty_word().copy()
+p.pop(len(the_word))
+actual = the_word.copy()
 
 
 class Hangman:
@@ -72,7 +80,7 @@ class Hangman:
         self.gap2_lbl2 = Label(master, text=" ")
         self.gap2_lbl2.grid(row=4, column=0, sticky=W)
 
-        """ RESET """
+        """ RESET """  # DOESNT WORK
 
         # Creating a reset button
         self.reset_bttn = Button(master, text="Reset", command=self.reset, height=2, width=20)
@@ -105,19 +113,23 @@ class Hangman:
         self.curr_char1 = Label(self.rr, text=char)
         self.curr_char1.place(x=100, y=130)
 
-    def reset(self):
+    def reset(self):  # DOESNT WORK
         self.guess_ent.delete(0, 'end')
 
     def submit(self, *args):
         # Taking Entry From Entry Field
         char = self.guess_ent.get()
         # Checking whether Entry Field is empty or not
+
         if (len(char) == 0):
             messagebox.showwarning("Warning", "Entry field is Empty")
+
         if (len(char) > 1):
             messagebox.showwarning("Warning", "Enter the single letter")
+
         if char in actual and len(char) == 1:
             l = actual.count(char)
+
             for j in range(l):
                 i = actual.index(char)
                 p.insert(i, char)
@@ -128,6 +140,7 @@ class Hangman:
             self.inst_lb3.config(text='Right Guessed!')
             self.guess_ent.delete(0, 'end')
             self.current_status(p)
+
         elif (len(char) == 1):
             self.count = self.count + 1
             self.inst_lb2.config(text='Life:' + str(10 - self.count))
@@ -137,32 +150,43 @@ class Hangman:
         # Creating Hangman's parts orderwise if wrong character is Guessed
         if (self.count == 1):
             self.cir = self.c.create_oval(125, 100, 175, 50, width=2)
+
         elif (self.count == 2):
             self.el = self.c.create_line(135, 65, 145, 65, width=2)
+
         elif (self.count == 3):
             self.er = self.c.create_line(155, 65, 165, 65, width=2)
+
         elif (self.count == 4):
             self.no = self.c.create_line(150, 70, 150, 85, width=2)
+
         elif (self.count == 5):
             self.mo = self.c.create_line(140, 90, 160, 90, width=2)
+
         elif (self.count == 6):
             self.l3 = self.c.create_line(150, 100, 150, 200, width=2)
+
         elif (self.count == 7):
             self.hl = self.c.create_line(150, 125, 100, 150, width=2)
+
         elif (self.count == 8):
             self.hr = self.c.create_line(150, 125, 200, 150, width=2)
+
         elif (self.count == 9):
             self.fl = self.c.create_line(150, 200, 100, 225, width=2)
+
         elif (self.count == 10):
             self.fr = self.c.create_line(150, 200, 200, 225, width=2)
+
         # Condition of Player Won
-        if (p == random_word):
-            self.inst_lb3.config(text='You perfectly guessed the word!')
+
+        if (p == the_word):
+            self.inst_lb3.config(text='You guessed the word!')
             messagebox.showinfo("Hello", "You Won")
             self.rr.destroy()
         # Condition Of player Loose
         elif (self.count >= 10):
-            self.inst_lb3.config(text='You lost.... the word is ' + word)
+            self.inst_lb3.config(text='You lost.... the word is ' + get_difficulty_word())
             messagebox.showinfo("Hello", "You lost please try again!")
             self.rr.destroy()
 

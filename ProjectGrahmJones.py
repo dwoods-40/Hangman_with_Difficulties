@@ -38,7 +38,7 @@ def game(word):  # MAIN game
     tries = 6
 
     print('Now, it is time to play the game!')
-    print(hang_man(tries))  # turn this into the GUI at some point
+    print(hang_man(tries))
     print(word_complete)
     print('\n')
     print('The word is', len(word_complete), ' letters long! \n Good luck! \n')
