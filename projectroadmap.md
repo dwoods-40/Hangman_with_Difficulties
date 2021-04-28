@@ -76,3 +76,8 @@ Week of 23
 
 - Trying to figure out GUI
 - Completed Sprint 2
+
+Week of 26
+
+- Trying to finish the main game
+- struggling with tkinter
