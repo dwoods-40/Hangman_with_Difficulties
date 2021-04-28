@@ -1,5 +1,5 @@
 # Hangman game !
-from tkinter import *
+
 import random
 
 
@@ -54,7 +54,7 @@ def game(word):  # MAIN game
             elif guess_ui not in word:  # wrong letter
                 print('Sorry!', guess_ui, "is not in the word.")
 
-                if tries >= 1:  # may not work, tries to ask the user to please try again, unless there are no more tries left
+                if tries >= 1:  # tries to ask the user to please try again, unless there are no more tries left
                     print('Please, try another Letter!')
 
                 else:
@@ -103,7 +103,7 @@ def game(word):  # MAIN game
         print("Sorry, but you ran out of tries :( \nThe word was " + word + ". Please, try again later!")
 
 
-def hang_man(tries):  # taken straight from reference code, will cahnge to make it mine.
+def hang_man(tries):  # taken straight from reference code
     stages = [  # final state: head, torso, both arms, and both legs
         """
            --------

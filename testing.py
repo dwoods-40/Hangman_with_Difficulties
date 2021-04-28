@@ -7,25 +7,32 @@ from ISProject.Hangman_with_GUI_and_Difficulties.NormalWords import normal_list
 from ISProject.Hangman_with_GUI_and_Difficulties.HardWords import hard_list
 
 
-def get_difficulty_word(actual):  # pick's the difficultly
+def get_difficulty_word():  # pick's the difficultly
     while True:
         mode_ui = input('What Difficulty Would You Like To Play?\n(E)asy, (N)ormal {recommended}, or (H)ard: ')
         #  put function in each statement below so the correct difficulty gets put on word variable
         if mode_ui.lower() == 'e':  # play easy use another function if needed
-            random_word = random.choice(easy_list)
-            return random_word.upper()
+            a_word = random.choice(easy_list)
+            return a_word.upper()
 
         elif mode_ui.lower() == 'n':  # play normal
-            random_word = random.choice(normal_list)
-            return random_word.upper()
+            a_word = random.choice(normal_list)
+            return a_word.upper()
 
         elif mode_ui.lower() == 'h':  # play hard
-            random_word = random.choice(hard_list)
-            return random_word.upper()
+            a_word = random.choice(hard_list)
+            return a_word.upper()
 
         else:
             print('Invalid input, try again.')
 
+
+word = get_difficulty_word()
+random_word = list(word)
+p = []
+s = '_ ' * len(random_word)
+p = s.split(' ')
+p.pop(len(get_difficulty_word()))
 actual = get_difficulty_word().copy()
 
 
