@@ -44,7 +44,7 @@ p.pop(len(the_word))
 actual = the_word.copy()
 
 
-class Hangman:
+class Hangman:  # tkinter
     def __init__(self, master):
         self.count = 0
         self.structure(master)

@@ -33,10 +33,11 @@ and working properly.
 - [x] made main project file
 - [x] Difficulty working in project file
 - [x] Finish the main game
-- [ ] Start building GUI
-- [ ] Implement code into the GUi
-- [ ] Create an image for the hangman GUI
-- [ ] create GUI with TKinter
+- [x] Start building GUI
+- [x] Implement code into the GUi
+- [x] Create an image for the hangman GUI
+- [x] Create GUI with TKinter
+- [ ] Improve GUI
 
 
 # Progress so far
@@ -81,3 +82,4 @@ Week of 26
 
 - Trying to finish the main game
 - struggling with tkinter
+- Created PPT for Presnetation 
