@@ -113,10 +113,10 @@ class Hangman:  # tkinter
         # Checking whether Entry Field is empty or not
 
         if len(char) == 0:
-            messagebox.showwarning("Warning", "Entry field is Empty")
+            messagebox.showwarning("Warning!", "Entry field is Empty :(")
 
         if len(char) > 1:
-            messagebox.showwarning("Warning", "Enter the single letter")
+            messagebox.showwarning("Warning!", "Enter a single letter")
 
         if char in actual and len(char) == 1:
             l = actual.count(char)

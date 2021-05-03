@@ -37,7 +37,8 @@ and working properly.
 - [x] Implement code into the GUi
 - [x] Create an image for the hangman GUI
 - [x] Create GUI with TKinter
-- [ ] Improve GUI
+- [ ] Complete Project Presentation
+
 
 
 # Progress so far
