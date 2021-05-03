@@ -26,6 +26,7 @@ def get_difficulty_word():  # pick's the difficultly
         else:
             print('Invalid input, try again.')
 
+# changed original GUI code to function with my code
 
 list_word = []
 file1 = get_difficulty_word()
