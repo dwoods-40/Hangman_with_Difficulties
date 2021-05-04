@@ -69,7 +69,7 @@ def game(word):  # MAIN game
 
                 guess_lett.append(guess_ui)
                 word_list = list(word_complete)
-                indices = [i for i, letter in enumerate(word) if letter == guess_ui]  # wtf does this do
+                indices = [i for i, letter in enumerate(word) if letter == guess_ui]
 
                 for index in indices:
                     word_list[index] = guess_ui
