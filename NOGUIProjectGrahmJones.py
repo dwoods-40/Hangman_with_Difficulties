@@ -2,7 +2,7 @@
 
 import random
 
-
+# importing word files
 from ISProject.Hangman_with_GUI_and_Difficulties.EasyWords import easy_list
 from ISProject.Hangman_with_GUI_and_Difficulties.NormalWords import normal_list
 from ISProject.Hangman_with_GUI_and_Difficulties.HardWords import hard_list
