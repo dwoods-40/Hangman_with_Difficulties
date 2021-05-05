@@ -1,6 +1,6 @@
 # Project Road Map
 
-I am currently using [THIS](https://github.com/kiteco/python-youtube-code/tree/master/build-hangman-in-python) 
+I am currently using [this](https://github.com/kiteco/python-youtube-code/tree/master/build-hangman-in-python) 
 code to help me build my game. it is the code that inspried me to make this project and build a better game off of it
 
 This code uses a separate python file that only contains a long list of words for the hangman game, using random, to take 
@@ -21,9 +21,7 @@ you have never heard before.
 
 I have a little prior experience with tkinter, so I want to expand on that knowledge and make a good-looking GUI that 
 will help people enjoy my program more. I hope I can accomplish this with great success. The Diffuluclties are finished 
-and working properly. 
-
-- ...
+and working properly.
 
 
 # CHECK LIST
@@ -36,9 +34,8 @@ and working properly.
 - [x] Start building GUI
 - [x] Implement code into the GUi
 - [x] Create an image for the hangman GUI
-- [x] Create GUI with TKinter
+- [x] Create GUI with tkinter
 - [ ] Complete Project Presentation
-
 
 
 # Progress so far
@@ -74,13 +71,18 @@ Week of April 12th
 - Main game runs
 - Started testing tkinter and how to do the GUI
 
-Week of 23
+Week of April 19th
 
 - Trying to figure out GUI
 - Completed Sprint 2
 
-Week of 26
+Week of April 26th
 
+- Completed Sprint 3
 - Trying to finish the main game
 - struggling with tkinter
-- Created PPT for Presnetation 
+- Created PPT for Presentation 
+
+Week of May 1st
+
+- Completed presentation on May 5th, at 3:30 PM
