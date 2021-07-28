@@ -12,9 +12,3 @@ Make 3 levels of difficulties: Easy, Normal, and Hard
 
 These 3 levels will have a different variety of words ranging from the easiest of 3-letter words to hard, word likely 
 you have never heard before.
-
-
-Make an interactive GUI with tkinter. 
-
-I have a little prior experience with tkinter, so I want to expand on that knowledge and make a good-looking GUI that 
-will help people enjoy my program more. I hope I can accomplish this with great success. 
